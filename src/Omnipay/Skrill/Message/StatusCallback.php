@@ -338,7 +338,7 @@ class StatusCallback extends AbstractResponse
     {
         return strtoupper(md5(
             $this->getMerchantId() .
-            $this->getTransactionReference() .
+            $this->getTransactionId() .
             $this->getSecretWordForMd5Signature() .
             $this->getSkrillAmount(true) .
             $this->getSkrillCurrency() .
